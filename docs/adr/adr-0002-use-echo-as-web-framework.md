@@ -1,5 +1,5 @@
 ---
-id: 0001
+id: 0002
 title: Use Echo as Web Framework
 status: accepted
 date: 2025-05-15
