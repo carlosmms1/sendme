@@ -1,4 +1,4 @@
-# 📝 PRD — Encurtador de URLs (URL Shortener)
+# 📝 PRD — Sendme (URL Shortener)
 
 ## 📌 Visão Geral
 
@@ -31,7 +31,7 @@ O MVP será desenvolvido com foco em produtividade usando **Go**, **Echo**, **GO
 ## 📁 Estrutura do Projeto
 
 ```
-url-shortener/
+sendme/
 ├── cmd/
 │   └── main.go                   # Inicialização da aplicação
 ├── internal/
@@ -59,7 +59,7 @@ url-shortener/
 ```json
 {
   "original_url": "https://exemplo.com/artigo/123",
-  "ttl": 3600 // (opcional, em segundos)
+  "ttl": 3600
 }
 ```
 
@@ -68,7 +68,7 @@ url-shortener/
 ```json
 {
   "short_url": "https://sh.rt/abc123",
-  "expires_at": "2025-05-14T13:00:00Z" // se TTL fornecido
+  "expires_at": "2025-05-14T13:00:00Z"
 }
 ```
 
@@ -83,7 +83,7 @@ url-shortener/
 ## ⚙️ Variáveis de Ambiente (.env)
 
 ```env
-BASE_URL=https://sh.rt/
+BASE_URL=https://send.me/
 DATABASE_URL=postgres://user:password@db:5432/url_db
 REDIS_URL=redis://redis:6379
 PORT=8080
